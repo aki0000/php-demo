@@ -1,3 +1,4 @@
 *.lock
 *.bak
 *.cache
+junit_report.xml
