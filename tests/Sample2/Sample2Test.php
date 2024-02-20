@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once __DIR__ . '/../src/Sample2.php';
+require_once __DIR__ . '/../../src/Sample2/Sample2.php';
 
 class Sample2Test extends TestCase {
     public function testSubtraction() {

@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once __DIR__ . '/../src/Sample1.php';
+require_once __DIR__ . '/../../src/Sample1/Sample1.php';
 
 class Sample1Test extends TestCase {
     public function testAddition() {
