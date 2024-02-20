@@ -16,3 +16,4 @@ reports:
   junit:
     files:
       - '**/junit_report.xml'
+
