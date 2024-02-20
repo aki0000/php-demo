@@ -3,3 +3,5 @@
 *.cache
 junit_report.xml
 /coverage/
+/vendor/
+coverage-report.xml

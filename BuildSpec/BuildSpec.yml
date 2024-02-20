@@ -16,4 +16,8 @@ reports:
   junit:
     files:
       - '**/junit_report.xml'
+  coverage-report:
+    files:
+      - coverage-report.xml
+    file-format: CoberturaXml
 
