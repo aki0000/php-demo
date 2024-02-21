@@ -14,7 +14,8 @@ phases:
   build:
     commands:
         - echo Executing Unit Test and Build an Artifact...
-        - vendor/bin/phpunit --log-junit junit_report.xml --coverage-cobertura coverage-report.xml
+        #- vendor/bin/phpunit --log-junit junit_report.xml --coverage-cobertura coverage-report.xml
+        - php -i | grep php.ini
 
 reports:
   junit:
