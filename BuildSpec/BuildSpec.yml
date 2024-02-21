@@ -21,7 +21,7 @@ phases:
   post_build:
     commands:
         - echo Checking SAST...
-        - vendor/bin/phpunit analyze src tests
+        - vendor/bin/phpstan analyze src tests
 
 reports:
   junit:
