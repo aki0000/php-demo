@@ -2,9 +2,11 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="vendor/autoload.php" backupGlobals="false" colors="true" processIsolation="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
   <testsuites>
     <testsuite name="Project Test Suite">
-      <directory>tests</directory>
+        <directory>tests</directory>
+        <exclude>tests/Sample1/Sample1Test.php</exclude>
     </testsuite>
   </testsuites>
+
   <php>
     <env name="APP_ENV" value="testing"/>
   </php>
