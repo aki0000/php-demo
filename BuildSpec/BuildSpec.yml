@@ -18,6 +18,10 @@ phases:
         - echo Executing Unit Test and Build an Artifact...
         - vendor/bin/phpunit --log-junit junit_report.xml --coverage-cobertura coverage-report.xml
         #- php -i | grep php.ini
+  post_build:
+    commands:
+        - echo Checking SAST...
+        - vendor/bin/phpunit analyze src tests
 
 reports:
   junit:
