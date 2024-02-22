@@ -12,12 +12,12 @@ phases:
         - echo Installing Composer...
         - composer install
         - echo Setting Xdebug...
-        - echo 'xdebug.mode=develop,debug,coverage' >> /root/.phpenv/versions/8.2.5/etc/php.ini
+        - export PHPINI_PATH=$(php -i | grep 'Loaded Configuration File' | awk '{print $5}')
+        - echo 'xdebug.mode=coverage' >> $PHPINI_PATH
   build:
     commands:
         - echo Executing Unit Test and Build an Artifact...
         - vendor/bin/phpunit --log-junit junit_report.xml --coverage-cobertura coverage-report.xml
-        #- php -i | grep php.ini
   post_build:
     commands:
         - echo Checking SAST...
